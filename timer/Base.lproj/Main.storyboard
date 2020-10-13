@@ -21,42 +21,40 @@
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sb4-3y-3wy">
-                                <rect key="frame" x="170" y="314.5" width="74" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abV-9I-Mo5">
+                                <rect key="frame" x="165" y="314.5" width="84" height="30"/>
                                 <state key="normal" title="一時停止"/>
-                                <connections>
-                                    <action selector="pauseTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pxp-mg-gV5"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cne-dZ-1h7">
-                                <rect key="frame" x="89" y="314" width="31" height="30"/>
-                                <state key="normal" title="再生"/>
-                                <connections>
-                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hyI-cz-qTj"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36C-L6-wYJ">
+                                <rect key="frame" x="50" y="314.5" width="65" height="30"/>
+                                <state key="normal" title="スタート"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzf-JZ-p66">
-                                <rect key="frame" x="294" y="314" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sx-YV-loL">
+                                <rect key="frame" x="299" y="314.5" width="65" height="30"/>
                                 <state key="normal" title="リセット"/>
-                                <connections>
-                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ut2-Tc-xIB"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="abV-9I-Mo5" firstAttribute="top" secondItem="GjG-fn-pPL" secondAttribute="bottom" constant="150" id="499-Od-bd3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GjG-fn-pPL" secondAttribute="trailing" constant="80" id="4l4-vu-rFF"/>
-                            <constraint firstItem="Sb4-3y-3wy" firstAttribute="leading" secondItem="cne-dZ-1h7" secondAttribute="trailing" constant="50" id="F6p-8g-0OF"/>
-                            <constraint firstItem="Sb4-3y-3wy" firstAttribute="top" secondItem="GjG-fn-pPL" secondAttribute="bottom" constant="150" id="L2s-hf-gTG"/>
-                            <constraint firstItem="Bzf-JZ-p66" firstAttribute="leading" secondItem="Sb4-3y-3wy" secondAttribute="trailing" constant="50" id="OZE-Ec-sR4"/>
+                            <constraint firstItem="5sx-YV-loL" firstAttribute="top" secondItem="GjG-fn-pPL" secondAttribute="bottom" constant="150" id="Bcv-up-6ln"/>
+                            <constraint firstItem="5sx-YV-loL" firstAttribute="leading" secondItem="abV-9I-Mo5" secondAttribute="trailing" constant="50" id="Ibe-3h-BzS"/>
+                            <constraint firstItem="abV-9I-Mo5" firstAttribute="leading" secondItem="36C-L6-wYJ" secondAttribute="trailing" constant="50" id="IcC-Ti-b8a"/>
                             <constraint firstItem="GjG-fn-pPL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="R76-fN-8TN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="abV-9I-Mo5" secondAttribute="trailing" constant="165" id="WKt-u1-vET"/>
+                            <constraint firstItem="36C-L6-wYJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Z6b-mn-rAQ"/>
                             <constraint firstItem="GjG-fn-pPL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="aba-QF-YGN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sb4-3y-3wy" secondAttribute="trailing" constant="170" id="eoT-IZ-Sfo"/>
-                            <constraint firstItem="Sb4-3y-3wy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="rGF-zw-b97"/>
+                            <constraint firstItem="36C-L6-wYJ" firstAttribute="top" secondItem="GjG-fn-pPL" secondAttribute="bottom" constant="150" id="d5u-O0-4QX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5sx-YV-loL" secondAttribute="trailing" constant="50" id="vGM-1o-cD9"/>
+                            <constraint firstItem="abV-9I-Mo5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="x30-m6-dON"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="pauseTimer" destination="abV-9I-Mo5" id="bYT-8V-gnp"/>
+                        <outlet property="resetTimer" destination="5sx-YV-loL" id="z7a-Kc-pKq"/>
+                        <outlet property="startTimer" destination="36C-L6-wYJ" id="NHx-zv-zyt"/>
                         <outlet property="timer" destination="GjG-fn-pPL" id="gge-JO-Nvn"/>
                     </connections>
                 </viewController>
